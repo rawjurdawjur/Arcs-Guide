@@ -222,7 +222,6 @@
   .qjump button{font-family:'Karla',sans-serif;font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;
     border:1px solid rgba(60,50,30,.35);border-radius:999px;padding:10px 15px;cursor:pointer;
     background:rgba(28,21,11,.92);color:#f5efdf;box-shadow:0 4px 14px rgba(60,50,30,.35);-webkit-tap-highlight-color:transparent}
-  .qjump button.qtop{padding:10px 13px}
   .qjump button:active{transform:translateY(1px)}
   .qjump.hidden{display:none}
 }
@@ -1472,36 +1471,39 @@ document.addEventListener('DOMContentLoaded', function(){
 </div>
 
 <div class="qjump hidden" id="qjump">
-  <button id="qgloss" type="button">Glossary</button>
-  <button id="qtop" class="qtop" type="button" aria-label="Back to top">&uarr;</button>
+  <button id="qnav" type="button">Jump to a Card</button>
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function(){
-  var wrap = document.getElementById('qjump'), g = document.getElementById('qgloss'), t = document.getElementById('qtop');
+  var wrap = document.getElementById('qjump'), btn = document.getElementById('qnav');
+  var nav = document.querySelector('nav.side'), det = document.querySelector('nav.side details');
   var saved = null;
   function update(){
     var y = window.scrollY || document.documentElement.scrollTop;
-    wrap.classList.toggle('hidden', y < 600);
+    wrap.classList.toggle('hidden', y < 600 && saved === null);
   }
   window.addEventListener('scroll', update, {passive:true});
   update();
-  g.addEventListener('click', function(){
+  function reset(){ saved = null; btn.textContent = 'Jump to a Card'; }
+  btn.addEventListener('click', function(){
     if(saved === null){
       saved = window.scrollY || document.documentElement.scrollTop;
-      document.getElementById('glossary').scrollIntoView({behavior:'smooth'});
-      g.textContent = '\u21a9 Back';
+      if(det) det.open = true;
+      nav.scrollIntoView({behavior:'smooth'});
+      btn.textContent = '\u21a9 Back';
+      update();
     } else {
       var doc = document.documentElement, prev = doc.style.scrollBehavior;
       doc.style.scrollBehavior = 'auto';
       window.scrollTo(0, saved);
       doc.style.scrollBehavior = prev;
-      saved = null;
-      g.textContent = 'Glossary';
+      reset();
+      update();
     }
   });
-  t.addEventListener('click', function(){
-    saved = null; g.textContent = 'Glossary';
-    window.scrollTo({top: 0, behavior:'smooth'});
+  // choosing a card from the nav is a deliberate move — clear the return state
+  nav.addEventListener('click', function(e){
+    if(e.target.closest('a')){ reset(); update(); }
   });
 });
 </script>
