@@ -225,6 +225,10 @@
   .qjump button:active{transform:translateY(1px)}
   .qjump.hidden{display:none}
 }
+
+.fdata{margin-top:14px;border-left:3px solid #3e7a8a;background:#f0efe0;padding:11px 15px;border-radius:0 6px 6px 0}
+.fdata b{font-family:'Karla',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:#3e7a8a;display:block;margin-bottom:4px}
+.fdata p{margin:0;font-family:'Spectral',serif;font-size:14px;line-height:1.55;color:#3d3524}
 </style>
 </head>
 <body>
@@ -430,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function(){
 <hr class="rule">
 <div class="intro">
   <p>With Leaders &amp; Lore in the mix, setup replaces the symmetric start: a pool of Leader and Lore cards is revealed and drafted <strong>in reverse turn order</strong>, so the player going last picks first. Everyone ends up with exactly one Leader and one Lore card (the Archivist being the famous exception — she leaves setup holding three Lore). Your Leader rewrites your starting buildings and resources and gives you a permanent upside stapled to a permanent downside; your Lore is a private technology that no one else has — and unlike Guild cards, Lore has <em>no guild icon and no raid cost</em>, so it never adds to ambitions and can never be stolen. It is yours for the whole game.</p>
-  <p>Because the draft is combinatorial, evaluate the pool as <strong>pairs, not singles</strong>. A mid-tier Lore next to the right Leader (Raider Exosuits next to the Corsair, Force Beams next to the Rebel, Tycoon's Charm next to the Mystic) jumps a full tier. When you pick first, take the strongest single card; when you pick in the middle, take the card that completes <em>your</em> pair or breaks up an opponent's.</p>
+  <p>Because the draft is combinatorial, evaluate the pool as <strong>pairs, not singles</strong>. A mid-tier Lore next to the right Leader (Empath's Bond next to the Mystic, Tyrant's Authority next to the Quartermaster, Hidden Harbors next to the Archivist) jumps a full tier. When you pick first, take the strongest single card; when you pick in the middle, take the card that completes <em>your</em> pair or breaks up an opponent's.</p>
 </div>
 
 <h2 class="sect" id="principles">Five Principles Before You Pick</h2>
@@ -465,6 +469,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#keepers-trust"><b>Keeper's Trust</b> — locks down the Relic hoard</a>
     <a class="pair" href="#predictive-sensors"><b>Predictive Sensors</b> — turns bait into ambush</a>
   </div>
+<div class="fdata"><b>Field data</b><p>A strong pick at 3 players (39%, +6 over baseline) that collapses at 4 (22%, &minus;3). More rivals means more attackers Beloved can't watch at once.</p></div>
 </article>
 
 <article class="card" id="mystic">
@@ -527,6 +532,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#warlords-cruelty"><b>Warlord's Cruelty</b> — you declare Warlord often enough to use it</a>
   </div>
   <div class="ruling"><b>Errata</b> Callow now reads: "You cannot tax cities that you do not control." Same intent, cleaner interaction with cards that let you tax non-Loyal cities.</div>
+<div class="fdata"><b>Field data</b><p>Quietly a top-four Leader at 3 players (41%, +8) &mdash; and, per the data, undervalued at 4, where players leave him in the pool at one of the highest rates.</p></div>
 </article>
 
 <article class="card" id="rebel">
@@ -568,6 +574,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#warlords-terror"><b>Warlord's Terror</b> — convert surplus Trophies into Court presence</a>
   </div>
   <div class="ruling"><b>Official ruling</b> The extra move granted by Tactical is the stated action only — you can't use it to trigger a different action printed on a Guild or Lore card, though modifiers like Sprinter Drives still apply.</div>
+<div class="fdata"><b>Field data</b><p>The field disagrees with the theory here, hard: 19% win rate at 3 players and 14% at 4 &mdash; worst or second-worst Leader &mdash; while being picked far more often than that performance earns. The tempo machinery above is real, but battles apparently don't convert to Power at the rate they feel like they should. Treat him as the pack's trap pick until your table proves otherwise.</p></div>
 </article>
 
 <article class="card" id="feastbringer">
@@ -588,6 +595,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#warlords-terror"><b>Warlord's Terror</b> — another influence faucet for Court dominance</a>
     <a class="pair" href="#ancient-holdings"><b>Ancient Holdings</b> — Relic start, Keeper lean, protected slot</a>
   </div>
+<div class="fdata"><b>Field data</b><p>The Elder's mirror image: near-bottom at 3 players (22%) but solidly above baseline at 4 (28%). Generous hurts far less when the gifts scatter across three rivals instead of concentrating in one.</p></div>
 </article>
 
 <article class="card" id="demagogue">
@@ -608,6 +616,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#tyrants-ego"><b>Tyrant's Ego</b> — captives convert into the secures Paranoid taxes</a>
     <a class="pair" href="#keepers-solidarity"><b>Keeper's Solidarity</b> — guards the card pile you'll accumulate</a>
   </div>
+<div class="fdata"><b>Field data</b><p>Underperforms the excitement: 28% / 23% win rates, below baseline at both counts. The blanket is spectacular; the agent-supply and Paranoid taxes appear to eat most of what it earns.</p></div>
 </article>
 
 <h2 class="sect" id="leaders-ll">Leaders — Leaders &amp; Lore Pack</h2>
@@ -697,6 +706,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#ancient-holdings"><b>Ancient Holdings</b> — hoard quietly, win the count outright</a>
   </div>
   <div class="ruling"><b>Official ruling</b> If Connected and another declare trigger (like Farseers) fire together, you choose the order.</div>
+<div class="fdata"><b>Field data</b><p>The strongest Leader in the game by the numbers: 51% win rate at 3 players and 39% at 4 (baselines 33% / 25%) across 2,255 recorded matches &mdash; the widest margin over baseline of any card in the pack. The declaration engine is not a style choice; it is simply how you win Arcs.</p></div>
 </article>
 
 <article class="card" id="anarchist">
@@ -818,6 +828,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#agitator"><b>Agitator</b> — poke from behind the porcupine quills</a>
     <a class="pair" href="#quartermaster"><b>Quartermaster</b> — a firebase that repairs itself</a>
   </div>
+<div class="fdata"><b>Field data</b><p>Above baseline at 4 players (30%, +5) but only average at 3 &mdash; the data's author notes it simply 'gets much less action' in smaller games with fewer battles.</p></div>
 </article>
 
 <article class="card" id="sprinter-drives">
@@ -835,6 +846,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#anarchist"><b>Anarchist</b> — spread the taxing swarm at speed</a>
   </div>
   <div class="ruling"><b>Official ruling</b> The extra moves may go to different destinations, including ships dropped off mid-Catapult.</div>
+<div class="fdata"><b>Field data</b><p>#2 Lore in the data at both counts (47% / 34%). The community suspected it was the most broken Lore; it's merely second.</p></div>
 </article>
 
 <article class="card" id="mirror-plating">
@@ -952,6 +964,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#shaper"><b>Shaper</b> — extra taxes mean extra Mythic rewrites</a>
   </div>
   <div class="ruling"><b>Official ruling</b> Prune is a replacement: you must be able to place the new building, or the effect can't happen at all. Note that Nurture is a Build action, not a Copy/Pivot tax — so it does not trigger Attuned, Insatiable, or Firebrand.</div>
+<div class="fdata"><b>Field data</b><p>The single best card in the pack, and it isn't close: 54% win rate at 3 players (+21 over baseline) and #1 at 4 players too. If it's in the pool, it should never survive to the last pick.</p></div>
 </article>
 
 <article class="card" id="gate-stations">
@@ -1002,6 +1015,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#corsair"><b>Corsair</b> — capacity for one-of-everything reroll fuel</a>
     <a class="pair" href="#mystic"><b>Mystic</b> — a bomb-proof Psionic for the Empath count</a>
   </div>
+<div class="fdata"><b>Field data</b><p>The data's author flags this as the pool's most undervalued card: mid-pack win rate while being top-five in how often players leave it behind. If your table sleeps on it, that's your edge.</p></div>
 </article>
 
 <article class="card" id="seeker-torpedoes">
@@ -1056,6 +1070,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#anarchist"><b>Anarchist</b> — reposition your swarm and your victims alike</a>
   </div>
   <div class="ruling"><b>Errata</b> "In play areas" was added in the second printing — Guide ignores modifiers from Leader and card abilities, not the physical realities of the map.</div>
+<div class="fdata"><b>Field data</b><p>Below baseline at both counts (24% / 19%) despite the clever applications above. A reminder that a rules-bending trick still has to be worth the draft pick that buys it.</p></div>
 </article>
 
 <article class="card" id="raider-exosuits">
@@ -1072,6 +1087,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#rebel"><b>Rebel</b> — every kamikaze strike can pick a pocket</a>
     <a class="pair" href="#warrior"><b>Warrior</b> — move-and-raid wherever the loot drifts</a>
   </div>
+<div class="fdata"><b>Field data</b><p>The most-abandoned card in the draft pool and near the bottom on wins (24% / 15%). The data's author calls it, along with Survival Overrides, 'mostly inconsequential' &mdash; the effect is real but too small to bend games.</p></div>
 </article>
 
 <article class="card" id="survival-overrides">
@@ -1139,6 +1155,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#elder"><b>Elder</b> — the peaceful hoarder's insurance policy</a>
     <a class="pair" href="#feastbringer"><b>Feastbringer</b> — Relic start and a Court game to protect</a>
   </div>
+<div class="fdata"><b>Field data</b><p>Brutal numbers: worst Lore at 3 players (19%) and near-worst at 4 (17%). The synergy logic above stands, but the card's floor &mdash; a dead text box whenever Keeper isn't declared and contested &mdash; appears to dominate its ceiling in practice.</p></div>
 </article>
 
 <article class="card" id="keepers-solidarity">
@@ -1221,6 +1238,7 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#upstart"><b>Upstart</b> — control was already your whole doctrine</a>
     <a class="pair" href="#warrior"><b>Warrior</b> — Tactical strikes seize the ground Annex converts</a>
   </div>
+<div class="fdata"><b>Field data</b><p>A sleeper at 3 players &mdash; #5 Lore at 38% (+5) &mdash; but merely average at 4. Fewer rivals means the annexed starports face fewer angry neighbors.</p></div>
 </article>
 
 <article class="card" id="tycoons-ambition">
@@ -1256,6 +1274,69 @@ document.addEventListener('DOMContentLoaded', function(){
   </div>
 </article>
 
+
+
+<h3 style="font-family:'Cinzel',serif;font-size:19px;letter-spacing:.12em;text-transform:uppercase;color:#1c150b;margin:34px 0 6px" id="field-data">Field Data: 2,255 Matches</h3>
+<div class="intro">
+<p>A November 2025 community analysis (BGG user Haunt Roll Fail, <a href="https://boardgamegeek.com/thread/3604653/leaders-and-lore-ranking-and-winrates" style="color:#3e7a8a">thread here</a>) measured win rates across 983 three-player and 1,272 four-player recorded online matches. Read every number against its baseline &mdash; a random player wins 33% of 3P games and 25% of 4P games &mdash; and with the standard caveats: online populations skew experienced, win rate entangles the card with the players who choose it, and per-card samples run in the low hundreds, so treat gaps under ~4 points as noise.</p>
+<p>Three findings stand out. The <strong>Noble</strong> is the game's dominant Leader and <strong>Living Structures</strong> its dominant Lore, each towering over baseline at both counts. The <strong>Warrior</strong> is the pack's trap: bottom-two win rate while drafted far above his station. And pick order tracks power only loosely &mdash; players abandon Ancient Holdings while it performs mid-pack, and connectivity (the table above) predicts flexibility, not wins: the Noble sits at minimum connectivity and wins the most. Cards with big player-count splits are flagged in their own entries.</p>
+</div>
+<div class="tablewrap" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;align-items:start">
+  <table class="pairing">
+    <thead><tr><th>Leader</th><th>3P win</th><th>4P win</th></tr></thead>
+    <tbody>
+      <tr><td>Noble</td><td>51%</td><td>39%</td></tr>
+      <tr><td>Anarchist</td><td>43%</td><td>37%</td></tr>
+      <tr><td>Quartermaster</td><td>43%</td><td>28%</td></tr>
+      <tr><td>Upstart</td><td>41%</td><td>27%</td></tr>
+      <tr><td>Archivist</td><td>40%</td><td>31%</td></tr>
+      <tr><td>Elder</td><td>39%</td><td>22%</td></tr>
+      <tr><td>Fuel-Drinker</td><td>33%</td><td>19%</td></tr>
+      <tr><td>Overseer</td><td>32%</td><td>23%</td></tr>
+      <tr><td>Rebel</td><td>32%</td><td>26%</td></tr>
+      <tr><td>Mystic</td><td>32%</td><td>32%</td></tr>
+      <tr><td>Corsair</td><td>28%</td><td>18%</td></tr>
+      <tr><td>Demagogue</td><td>28%</td><td>23%</td></tr>
+      <tr><td>Agitator</td><td>25%</td><td>18%</td></tr>
+      <tr><td>Feastbringer</td><td>22%</td><td>28%</td></tr>
+      <tr><td>Shaper</td><td>19%</td><td>11%</td></tr>
+      <tr><td>Warrior</td><td>19%</td><td>14%</td></tr>
+    </tbody>
+  </table>
+  <table class="pairing">
+    <thead><tr><th>Lore</th><th>3P win</th><th>4P win</th></tr></thead>
+    <tbody>
+      <tr><td>Living Structures</td><td>54%</td><td>37%</td></tr>
+      <tr><td>Sprinter Drives</td><td>47%</td><td>34%</td></tr>
+      <tr><td>Repair Drones</td><td>42%</td><td>25%</td></tr>
+      <tr><td>Empath's Bond</td><td>39%</td><td>26%</td></tr>
+      <tr><td>Tyrant's Authority</td><td>38%</td><td>20%</td></tr>
+      <tr><td>Tool-Priests</td><td>37%</td><td>30%</td></tr>
+      <tr><td>Seeker Torpedoes</td><td>35%</td><td>27%</td></tr>
+      <tr><td>Hidden Harbors</td><td>35%</td><td>31%</td></tr>
+      <tr><td>Warlord's Terror</td><td>35%</td><td>20%</td></tr>
+      <tr><td>Empath's Vision</td><td>35%</td><td>22%</td></tr>
+      <tr><td>Tycoon's Ambition</td><td>34%</td><td>26%</td></tr>
+      <tr><td>Railgun Arrays</td><td>33%</td><td>26%</td></tr>
+      <tr><td>Signal Breaker</td><td>32%</td><td>21%</td></tr>
+      <tr><td>Ancient Holdings</td><td>32%</td><td>24%</td></tr>
+      <tr><td>Gate Stations</td><td>31%</td><td>24%</td></tr>
+      <tr><td>Galactic Rifles</td><td>31%</td><td>30%</td></tr>
+      <tr><td>Gate Ports</td><td>31%</td><td>25%</td></tr>
+      <tr><td>Mirror Plating</td><td>31%</td><td>26%</td></tr>
+      <tr><td>Tycoon's Charm</td><td>31%</td><td>25%</td></tr>
+      <tr><td>Warlord's Cruelty</td><td>28%</td><td>20%</td></tr>
+      <tr><td>Cloud Cities</td><td>26%</td><td>25%</td></tr>
+      <tr><td>Tyrant's Ego</td><td>25%</td><td>19%</td></tr>
+      <tr><td>Force Beams</td><td>24%</td><td>19%</td></tr>
+      <tr><td>Raider Exosuits</td><td>24%</td><td>15%</td></tr>
+      <tr><td>Predictive Sensors</td><td>24%</td><td>25%</td></tr>
+      <tr><td>Keeper's Solidarity</td><td>22%</td><td>29%</td></tr>
+      <tr><td>Survival Overrides</td><td>21%</td><td>13%</td></tr>
+      <tr><td>Keeper's Trust</td><td>19%</td><td>17%</td></tr>
+    </tbody>
+  </table>
+</div>
 
 <h2 class="sect" id="court">The Court by Leader</h2>
 <p class="sect-sub">Unlike your drafted Lore, Court cards are contested, arrive by luck of the flip, and can be raided away &mdash; so this is about recognizing your cards when they appear, not planning around them. Card text verified against the official card library and the Arcs Fates FAQ.</p>
@@ -1463,7 +1544,7 @@ document.addEventListener('DOMContentLoaded', function(){
 </dl>
 
 <footer class="guide-footer">
-  <p>Card text verified against the Buried Giant Studios card library, the Arcs base rulebook, and official Leder Games FAQ &amp; errata (current as of mid-2026). This guide covers the base-game draft with the Leaders &amp; Lore expansion pack only — Blighted Reach campaign content is not included.</p>
+  <p>Card text verified against the Buried Giant Studios card library, the Arcs base rulebook, and official Leder Games FAQ &amp; errata; win-rate data from the community analysis by BGG user Haunt Roll Fail (Nov 2025, 2,255 matches) (current as of mid-2026). This guide covers the base-game draft with the Leaders &amp; Lore expansion pack only — Blighted Reach campaign content is not included.</p>
   <p>Remember: Lore cards have no guild icon and no raid cost — they never add to ambitions and cannot be stolen. Guild cards and resources, by contrast, can be raided out of your play area.</p>
 </footer>
 
