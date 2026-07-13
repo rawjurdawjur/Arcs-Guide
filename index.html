@@ -230,11 +230,9 @@
 .fdata b{font-family:'Karla',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:#3e7a8a;display:block;margin-bottom:4px}
 .fdata p{margin:0;font-family:'Spectral',serif;font-size:14px;line-height:1.55;color:#3d3524}
 
-.snoopy{position:relative;margin:18px 0 6px 14px;background:#ece4f0;border:1px solid #b9a8c4;border-radius:16px;padding:13px 17px 12px}
-.snoopy::before{content:"";position:absolute;left:-9px;bottom:-7px;width:11px;height:11px;background:#ece4f0;border:1px solid #b9a8c4;border-radius:50%}
-.snoopy::after{content:"";position:absolute;left:-19px;bottom:-14px;width:6px;height:6px;background:#ece4f0;border:1px solid #b9a8c4;border-radius:50%}
-.snoopy b{font-family:'Karla',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:#6b4f7d;display:block;margin-bottom:4px}
-.snoopy p{margin:0;font-family:'Spectral',serif;font-size:14px;line-height:1.55;color:#3d3524;font-style:italic}
+.snoopy{margin-top:14px;border-left:3px solid #7d5a8a;background:#efe9ee;padding:11px 15px;border-radius:0 6px 6px 0}
+.snoopy b{font-family:'Karla',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:#7d5a8a;display:block;margin-bottom:4px}
+.snoopy p{margin:0;font-family:'Spectral',serif;font-size:14px;line-height:1.55;color:#3d3524}
 </style>
 </head>
 <body>
@@ -468,16 +466,15 @@ document.addEventListener('DOMContentLoaded', function(){
   <h4>How to play it</h4>
   <p>The Elder wants to be attacked — every battle that costs you a Trophy pays you back with a free influence, and no one can Ransack your Court agents by killing your pieces. That combination makes the classic anti-turtle tools much weaker against you, so lean into it: park pieces where they're tempting, spend your real actions on the Court, and let aggressive rivals convert their Aggression cards into your board presence. You are the best pure Court player in the base box.</p>
   <p><em>Just</em> is a real tax, not a fork: your Tyrant payouts are remapped downward — second place pays you nothing, and even an untied first pays only the <em>second</em>-place value, with no bonus city Power (on a 5/3 marker, your win is worth 3; every other finish is worth 0, ties included). So treat Tyrant as denial rather than income: captives you hold are captives a rival's count lacks, and winning the ambition is worth doing mostly to keep its full payout away from a genuine Tyrant player. Spend your real scoring effort elsewhere — the Relic start nudges you toward Keeper, which suits a low-conflict, Court-heavy game perfectly.</p>
-  <p>There's also a second, higher-variance archetype: the <strong>aggressive Elder</strong>. If a passive table starves <em>Beloved</em>, do the provoking — seize rivals' cities and gates so they must come take them back. That plan wants attack-sustain Lore instead: Repair Drones and Sprinter Drives. And if anyone declares Tyrant, Tyrant's Ego recycles his point-dead captives into extra secures. Default to the turtle; go aggressive when the table won't attack you.</p>
-<h4>Best lore pairings</h4>
+  <h4>Best lore pairings</h4>
   <div class="pairs">
     <a class="pair" href="#mirror-plating"><b>Mirror Plating</b> — punishes the attacks you're inviting</a>
     <a class="pair" href="#railgun-arrays"><b>Railgun Arrays</b> — a hit-tax on anyone who tests you</a>
     <a class="pair" href="#keepers-trust"><b>Keeper's Trust</b> — locks down the Relic hoard</a>
     <a class="pair" href="#predictive-sensors"><b>Predictive Sensors</b> — turns bait into ambush</a>
   </div>
-<div class="snoopy"><b>Snoopy’s Take</b><p>Rates him A tier and “sneaky strong”: Beloved is a free action on someone else's turn — influence when attacked, secure on yours. Position so rivals must attack you: control their cities and gates, or carry a big lead.</p></div>
 <div class="fdata"><b>Field data</b><p>A strong pick at 3 players (39%, +6 over baseline) that collapses at 4 (22%, &minus;3). More rivals means more attackers Beloved can't watch at once.</p></div>
+<div class="snoopy"><b>Snoopy’s Take</b><p>Rates him A tier and “sneaky strong”: Beloved is a free action on someone else's turn — influence when attacked, secure on yours. Position so rivals must attack you, or do the provoking yourself: his aggressive Elder seizes their cities and gates, wants Repair Drones and Sprinter Drives for sustain, and recycles point-dead captives into secures with Tyrant's Ego.</p></div>
 </article>
 
 <article class="card" id="mystic">
@@ -542,8 +539,8 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#warlords-cruelty"><b>Warlord's Cruelty</b> — you declare Warlord often enough to use it</a>
   </div>
   <div class="ruling"><b>Errata</b> Callow now reads: "You cannot tax cities that you do not control." Same intent, cleaner interaction with cards that let you tax non-Loyal cities.</div>
-<div class="snoopy"><b>Snoopy’s Take</b><p>A tier and his top recommendation for a first-time player. The trick to Ambitious: declare for the resource your board position needs, not the ambition's matching suit. Calls Ancient Holdings “probably the best card for Upstart.”</p></div>
 <div class="fdata"><b>Field data</b><p>Quietly a top-four Leader at 3 players (41%, +8) &mdash; and, per the data, undervalued at 4, where players leave him in the pool at one of the highest rates.</p></div>
+<div class="snoopy"><b>Snoopy’s Take</b><p>A tier and his top recommendation for a first-time player. The trick to Ambitious: declare for the resource your board position needs, not the ambition's matching suit. Calls Ancient Holdings “probably the best card for Upstart.”</p></div>
 </article>
 
 <article class="card" id="rebel">
@@ -586,8 +583,8 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#warlords-terror"><b>Warlord's Terror</b> — convert surplus Trophies into Court presence</a>
   </div>
   <div class="ruling"><b>Official ruling</b> The extra move granted by Tactical is the stated action only — you can't use it to trigger a different action printed on a Guild or Lore card, though modifiers like Sprinter Drives still apply.</div>
-<div class="snoopy"><b>Snoopy’s Take</b><p>B tier: a fine beginner Leader, outclassed competitively. Two tips — the table can police a leading Warrior just by declaring Empath, and Signal Breaker switches on at will, since the free move lets you bring only fresh ships into the fight.</p></div>
 <div class="fdata"><b>Field data</b><p>The field disagrees with the theory here, hard: 19% win rate at 3 players and 14% at 4 &mdash; worst or second-worst Leader &mdash; while being picked far more often than that performance earns. The tempo machinery above is real, but battles apparently don't convert to Power at the rate they feel like they should. Treat him as the pack's trap pick until your table proves otherwise.</p></div>
+<div class="snoopy"><b>Snoopy’s Take</b><p>B tier: a fine beginner Leader, outclassed competitively. Two tips — the table can police a leading Warrior just by declaring Empath, and Signal Breaker switches on at will, since the free move lets you bring only fresh ships into the fight.</p></div>
 </article>
 
 <article class="card" id="feastbringer">
@@ -608,8 +605,8 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#warlords-terror"><b>Warlord's Terror</b> — another influence faucet for Court dominance</a>
     <a class="pair" href="#ancient-holdings"><b>Ancient Holdings</b> — Relic start, Keeper lean, protected slot</a>
   </div>
-<div class="snoopy"><b>Snoopy’s Take</b><p>His S tier — “probably the best leader in the game.” The built-in influence-then-secure gobbles the Court, and the city-spread opening (two cities already on the map) races to the ambition bonuses. His counter-advice: push Tyrant and Warlord, the two ambitions Generous can't chase.</p></div>
 <div class="fdata"><b>Field data</b><p>The Elder's mirror image: near-bottom at 3 players (22%) but solidly above baseline at 4 (28%). Generous hurts far less when the gifts scatter across three rivals instead of concentrating in one.</p></div>
+<div class="snoopy"><b>Snoopy’s Take</b><p>His S tier — “probably the best leader in the game.” The built-in influence-then-secure gobbles the Court, and the city-spread opening (two cities already on the map) races to the ambition bonuses. His counter-advice: push Tyrant and Warlord, the two ambitions Generous can't chase.</p></div>
 </article>
 
 <article class="card" id="demagogue">
@@ -630,8 +627,8 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#tyrants-ego"><b>Tyrant's Ego</b> — captives convert into the secures Paranoid taxes</a>
     <a class="pair" href="#keepers-solidarity"><b>Keeper's Solidarity</b> — guards the card pile you'll accumulate</a>
   </div>
-<div class="snoopy"><b>Snoopy’s Take</b><p>B tier, a matchup Leader. Bold isn't an engine — it's a strike-at-the-right-moment blocking tool: blanket narrowly, plan the follow-up before you declare, and shine against Court players like the Feastbringer, Elder, and Mystic.</p></div>
 <div class="fdata"><b>Field data</b><p>Underperforms the excitement: 28% / 23% win rates, below baseline at both counts. The blanket is spectacular; the agent-supply and Paranoid taxes appear to eat most of what it earns.</p></div>
+<div class="snoopy"><b>Snoopy’s Take</b><p>B tier, a matchup Leader. Bold isn't an engine — it's a strike-at-the-right-moment blocking tool: blanket narrowly, plan the follow-up before you declare, and shine against Court players like the Feastbringer, Elder, and Mystic.</p></div>
 </article>
 
 <h2 class="sect" id="leaders-ll">Leaders — Leaders &amp; Lore Pack</h2>
@@ -724,8 +721,8 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#ancient-holdings"><b>Ancient Holdings</b> — hoard quietly, win the count outright</a>
   </div>
   <div class="ruling"><b>Official ruling</b> If Connected and another declare trigger (like Farseers) fire together, you choose the order.</div>
-<div class="snoopy"><b>Snoopy’s Take</b><p>“The hardest leader to win with — and my favorite to play.” Influence twice, seize, declare, and secure off the top of the deck in one breath. Play the enclave: cluster your ships, and let an allied rival's fleet in the gate be your wall. Expect the target on your back.</p></div>
 <div class="fdata"><b>Field data</b><p>The strongest Leader in the game by the numbers: 51% win rate at 3 players and 39% at 4 (baselines 33% / 25%) across 2,255 recorded matches &mdash; the widest margin over baseline of any card in the pack. The declaration engine is not a style choice; it is simply how you win Arcs.</p></div>
+<div class="snoopy"><b>Snoopy’s Take</b><p>“The hardest leader to win with — and my favorite to play.” Influence twice, seize, declare, and secure off the top of the deck in one breath. Play the enclave: cluster your ships, and let an allied rival's fleet in the gate be your wall. Expect the target on your back.</p></div>
 </article>
 
 <article class="card" id="anarchist">
@@ -918,7 +915,8 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#rebel"><b>Rebel</b> — two fresh ships, four dice, no fear</a>
     <a class="pair" href="#warrior"><b>Warrior</b> — move in fresh, strike, withdraw</a>
     <a class="pair" href="#repair-drones"><b>Repair Drones</b> — (Archivist stack) keeps the force fresh for the next strike</a>
-  </div>
+      <a class="pair" href="#quartermaster"><b>Quartermaster</b> — Resilient re-freshens the fleet between fights, re-arming this for the second and third strikes</a>
+</div>
 </article>
 
 <article class="card" id="repair-drones">
@@ -985,7 +983,10 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#overseer"><b>Overseer</b> — Nurture is a tax, so Ruthless doubles it</a>
     <a class="pair" href="#quartermaster"><b>Quartermaster</b> — Prune manufactures starports for Resilient</a>
     <a class="pair" href="#shaper"><b>Shaper</b> — extra taxes mean extra Mythic rewrites</a>
-  </div>
+      <a class="pair" href="#mystic"><b>Mystic</b> — Nurture makes Construction rounds feed Attuned too — her trigger nearly doubles its uptime</a>
+    <a class="pair" href="#fuel-drinker"><b>Fuel-Drinker</b> — every Nurture build is an Insatiable tax</a>
+    <a class="pair" href="#agitator"><b>Agitator</b> — Firebrand fires off Nurture's tax — Weapons from Construction cards</a>
+</div>
   <div class="ruling"><b>Official ruling</b> Prune is a replacement: you must be able to place the new building, or the effect can't happen at all. Note that Nurture is a Build action, not a Copy/Pivot tax — so it does not trigger Attuned, Insatiable, or Firebrand.</div>
 <div class="fdata"><b>Field data</b><p>The single best card in the pack, and it isn't close: 54% win rate at 3 players (+21 over baseline) and #1 at 4 players too. If it's in the pool, it should never survive to the last pick.</p></div>
 </article>
@@ -1104,7 +1105,8 @@ document.addEventListener('DOMContentLoaded', function(){
   </div>
   <h4>How to use it</h4>
   <p>Normally raid dice require defending buildings — so players hide their loot behind buildingless fleets in open space or on gates, knowing you can't steal from them there. Exosuits closes the loophole: any fight can now include a raid die, meaning any rival with a fat play area is raidable anywhere their ships stand. It changes target selection completely; hunt the resources and Guild cards, not the territory. One die per battle keeps it honest, so it's a scalpel rather than a vacuum.</p>
-  <h4>Best with</h4>
+  <p>The one genuine exception is the Corsair: Tricky's reroll turns this card's lone die from a coin flip into roughly three-in-four odds, which is a different card entirely.</p>
+<h4>Best with</h4>
   <div class="pairs">
     <a class="pair" href="#corsair"><b>Corsair</b> — the signature pairing; reroll that raid die until it pays</a>
     <a class="pair" href="#rebel"><b>Rebel</b> — every kamikaze strike can pick a pocket</a>
@@ -1211,7 +1213,9 @@ document.addEventListener('DOMContentLoaded', function(){
     <a class="pair" href="#overseer"><b>Overseer</b> — Ruthless re-tax on top of Cruelty re-tax</a>
     <a class="pair" href="#anarchist"><b>Anarchist</b> — farm the same Rival city twice a turn</a>
     <a class="pair" href="#agitator"><b>Agitator</b> — reload the Weapon arsenal at speed</a>
-  </div>
+      <a class="pair" href="#mystic"><b>Mystic</b> — re-tax the same city, mint another Psionic</a>
+    <a class="pair" href="#fuel-drinker"><b>Fuel-Drinker</b> — double taxes mean double Fuel</a>
+</div>
 </article>
 
 <article class="card" id="warlords-terror">
@@ -1222,7 +1226,8 @@ document.addEventListener('DOMContentLoaded', function(){
   </div>
   <h4>How to use it</h4>
   <p>Converts battlefield success into Court presence — every Trophy is a stored influence action. The tension is that spent Trophies are <em>returned</em>, shrinking the very Warlord count the ambition scores. Resolve it with surplus math: spend down to (not through) whatever margin keeps you in first, or dump the whole stack in chapters where Warlord isn't contested by you. For military players who normally cede the Court entirely, this is how you fight on both boards with one army.</p>
-  <h4>Best with</h4>
+  <p>One devious line: trophies spent this way go <em>home</em> — including destroyed cities, which return to their owner's player board and re-cover the +2/+3 bonus slots. Timed just before scoring, the denial can outvalue the influence.</p>
+<h4>Best with</h4>
   <div class="pairs">
     <a class="pair" href="#warrior"><b>Warrior</b> — a Trophy faucet with Court ambitions</a>
     <a class="pair" href="#rebel"><b>Rebel</b> — kamikaze raids print the currency</a>
@@ -1289,7 +1294,8 @@ document.addEventListener('DOMContentLoaded', function(){
   </div>
   <h4>How to use it</h4>
   <p>A currency exchange: while Tycoon is up, Material and Fuel — the easiest resources to farm — convert one-for-one into anything, including the Psionics and Relics that are otherwise slow to mint. Run a boring Tycoon economy all chapter, then launder it into whichever ambition suits the endgame. And the second Prelude is a full pardon for Material and Fuel Outrage, which makes this the designated cure for setup-Outraged Leaders. Flexible enough that almost no one is sad to hold it.</p>
-  <h4>Best with</h4>
+  <p>And a cleaner trick for the Fuel-Drinker than it first looks: convert Fuel into <em>Material</em> before scoring. The Tycoon count survives intact, while Lavish — which burns only Fuel — finds nothing to burn.</p>
+<h4>Best with</h4>
   <div class="pairs">
     <a class="pair" href="#mystic"><b>Mystic</b> — the discard Prelude deletes Cryptic outright</a>
     <a class="pair" href="#fuel-drinker"><b>Fuel-Drinker</b> — launder the Fuel before Lavish burns it</a>
@@ -1514,23 +1520,23 @@ document.addEventListener('DOMContentLoaded', function(){
 <h2 class="sect" id="synergy-web">The Synergy Web</h2>
 <p class="sect-sub">Some numbers on the pairing graph itself — how likely combos are to appear in your draft, and which Leaders connect to the most Lore.</p>
 <div class="intro">
-  <p><strong>Will a recommended pair even show up?</strong> Almost always. The draft reveals rows of players&nbsp;+&nbsp;1 cards each, and this guide's recommendations form 87 distinct Leader&ndash;Lore links. Computing over every possible layout: at 2 players (rows of 3), at least one recommended pair appears in <strong>87%</strong> of drafts, averaging about 1.7 pairs on display; at 3 players (rows of 4), <strong>98%</strong> and about 3 pairs; at 4 players (rows of 5), <strong>99.8%</strong> and about 5 pairs. The practical upshot: the drafting skill is almost never <em>finding</em> a pair &mdash; it's judging which pair you can actually complete from your seat before a rival takes the other half. (Court recommendations are excluded from these figures: the Court arrives by flip during play, not by draft.)</p>
+  <p><strong>Will a recommended pair even show up?</strong> Almost always. The draft reveals rows of players&nbsp;+&nbsp;1 cards each, and this guide's recommendations form 93 distinct Leader&ndash;Lore links. Computing over every possible layout: at 2 players (rows of 3), at least one recommended pair appears in <strong>89%</strong> of drafts, averaging about 1.9 pairs on display; at 3 players (rows of 4), <strong>98%</strong> and about 3 pairs; at 4 players (rows of 5), <strong>99.8%</strong> and about 5 pairs. The practical upshot: the drafting skill is almost never <em>finding</em> a pair &mdash; it's judging which pair you can actually complete from your seat before a rival takes the other half. (Court recommendations are excluded from these figures: the Court arrives by flip during play, not by draft.)</p>
   <p><strong>Connectivity as draft flexibility.</strong> The table below counts how many distinct Lore cards connect to each Leader &mdash; the picks listed in the Leader's own entry, plus every Lore entry that recommends the Leader back. Read it as flexibility, not power: a high-connectivity Leader is safe to take early because they can't be sniped out of a combo (whatever Lore survives to your next pick, odds are it works), while a low-connectivity Leader is a commitment to fight for specific cards. The Quartermaster tops the list because his repairs and starport count feed the two things the Lore deck checks most often &mdash; <em>fresh pieces</em> and <em>starports</em> &mdash; so a large share of the deck is implicitly advertising for him.</p>
 </div>
 <div class="tablewrap">
   <table class="pairing">
     <thead><tr><th>Leader</th><th>Connected Lore</th><th>Own picks</th><th>Named by Lore entries</th></tr></thead>
     <tbody>
-      <tr><td><a href="#quartermaster" style="color:inherit;text-decoration:none">Quartermaster</a></td><td>10</td><td>4</td><td>6</td></tr>
+      <tr><td><a href="#quartermaster" style="color:inherit;text-decoration:none">Quartermaster</a></td><td>11</td><td>4</td><td>7</td></tr>
       <tr><td><a href="#warrior" style="color:inherit;text-decoration:none">Warrior</a></td><td>8</td><td>4</td><td>4</td></tr>
       <tr><td><a href="#rebel" style="color:inherit;text-decoration:none">Rebel</a></td><td>8</td><td>4</td><td>4</td></tr>
+      <tr><td><a href="#mystic" style="color:inherit;text-decoration:none">Mystic</a></td><td>7</td><td>4</td><td>3</td></tr>
+      <tr><td><a href="#fuel-drinker" style="color:inherit;text-decoration:none">Fuel-Drinker</a></td><td>7</td><td>4</td><td>3</td></tr>
       <tr><td><a href="#feastbringer" style="color:inherit;text-decoration:none">Feastbringer</a></td><td>7</td><td>4</td><td>3</td></tr>
+      <tr><td><a href="#agitator" style="color:inherit;text-decoration:none">Agitator</a></td><td>6</td><td>4</td><td>2</td></tr>
       <tr><td><a href="#upstart" style="color:inherit;text-decoration:none">Upstart</a></td><td>5</td><td>4</td><td>1</td></tr>
       <tr><td><a href="#shaper" style="color:inherit;text-decoration:none">Shaper</a></td><td>5</td><td>4</td><td>1</td></tr>
-      <tr><td><a href="#mystic" style="color:inherit;text-decoration:none">Mystic</a></td><td>5</td><td>4</td><td>1</td></tr>
-      <tr><td><a href="#fuel-drinker" style="color:inherit;text-decoration:none">Fuel-Drinker</a></td><td>5</td><td>4</td><td>1</td></tr>
       <tr><td><a href="#anarchist" style="color:inherit;text-decoration:none">Anarchist</a></td><td>5</td><td>4</td><td>1</td></tr>
-      <tr><td><a href="#agitator" style="color:inherit;text-decoration:none">Agitator</a></td><td>5</td><td>4</td><td>1</td></tr>
       <tr><td><a href="#overseer" style="color:inherit;text-decoration:none">Overseer</a></td><td>4</td><td>4</td><td>0</td></tr>
       <tr><td><a href="#noble" style="color:inherit;text-decoration:none">Noble</a></td><td>4</td><td>4</td><td>0</td></tr>
       <tr><td><a href="#elder" style="color:inherit;text-decoration:none">Elder</a></td><td>4</td><td>4</td><td>0</td></tr>
